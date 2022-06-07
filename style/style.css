@@ -1,0 +1,1393 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Tiro Tamil", serif;
+  src: url(./fonts/TiroTamil-Regular.ttf);
+}
+
+.header {
+  height: 82px;
+  font-family: "Tiro Tamil", serif;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container {
+  width: 100%;
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Tiro Tamil", serif;
+}
+
+.header .header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+}
+
+.header .header__logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 781px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__menu .header__menu-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu .header__menu-set .menu__set {
+  padding-right: 8px;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu .header__menu-set .menu__set:hover {
+  background-image: url(../Images/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center 1px;
+}
+
+.header__menu .header__menu-set .menu__set .menu__set-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1e266d;
+}
+
+.header__menu .header__menu-set .menu__set .menu__set-link:hover {
+  text-decoration: underline;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+.phone__icon {
+  display: none;
+}
+
+.phone__link {
+  color: #1e266d;
+  text-decoration: none;
+}
+
+.phone__link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.button .button__set {
+  width: 113px;
+  height: 40px;
+  border-radius: 100px;
+  background: #3751ff;
+  color: white;
+  border: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.button .button__set:hover {
+  background: #455880;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.mini__menu {
+  display: none;
+  text-decoration: none;
+  color: #1e266d;
+  font-size: 16px;
+  margin-left: 1%;
+}
+
+.mini__menu:hover {
+  text-decoration: underline;
+}
+
+.sub__menu {
+  display: none;
+  gap: 49px;
+  margin-left: 4%;
+}
+
+.mini__menu:focus ~ .sub__menu,
+.mini__menu:active ~ .sub__menu,
+.sub__menu:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub__menu-set {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub__menu-set:hover {
+  background-image: url(../Images/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center 1px;
+}
+
+.sub__menu-link {
+  text-decoration: none;
+  color: #1e266d;
+  font-size: 16px;
+}
+
+.sub__menu-link:hover {
+  text-decoration: underline;
+}
+
+/* 1240 ========================================================*/
+@media (max-width: 1240px) {
+  .phone__icon {
+    display: block;
+  }
+  .phone__link {
+    display: none;
+  }
+  .header .header_inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/* 890 ======================================================*/
+@media (max-width: 890px) {
+  .header__menu .header__menu-set .menu__set {
+    display: none;
+  }
+  .header__menu .mini__menu {
+    display: block;
+  }
+}
+
+/* 843 */
+@media (max-width: 843px) {
+  .sub__menu {
+    gap: 27px;
+  }
+}
+
+/* 750 */
+@media (max-width: 750px) {
+  .mini__menu:active ~ .sub__menu,
+  .mini__menu:focus ~ .sub__menu {
+    display: block;
+  }
+  .sub__menu-set {
+    height: 15px;
+  }
+  .sub__menu-set:hover {
+    background-image: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .sub__menu-link {
+    font-size: 13px;
+  }
+}
+
+/* main ====================================>
+  =================================================================> */
+.main {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.main .main__bg {
+  margin: 0 auto;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 249, 255, 0.12)), to(#f2f9ff));
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #f2f9ff 100%);
+  height: 878px;
+}
+
+.main__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 56px;
+  margin-top: 1px;
+  font-family: "Tiro Tamil", serif;
+  width: 100%;
+}
+
+.main__text .main__text-set {
+  color: #1e266d;
+  font-family: "Tiro Tamil", serif;
+  font-weight: bolder;
+  margin-top: 144px;
+  width: 100%;
+}
+
+.main__bottom-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 27px;
+  width: 100%;
+}
+
+.main__bottom-text .main__bottom-set {
+  color: #455880;
+  font-size: 18px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Tiro Tamil", serif;
+}
+
+.main__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 32px;
+  width: 100%;
+  font-family: "Tiro Tamil", serif;
+}
+
+.main__buttons .button__right {
+  width: 199px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  margin-left: 14px;
+  color: #455880;
+  border: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.main__buttons .button__right:hover {
+  background: #455880;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: #ffffff;
+}
+
+.main__buttons .button__left {
+  width: 148px;
+  height: 50px;
+  background: #3751ff;
+  border-radius: 100px;
+  margin-right: 14px;
+  color: white;
+  border: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.main__buttons .button__left:hover {
+  background: #455880;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__bottom_text {
+  margin-top: 52px;
+  margin-bottom: 49px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.bottom__text-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  color: rgba(69, 88, 128, 0.5);
+  font-family: "Tiro Tamil", serif;
+}
+
+@media (max-width: 1000px) {
+  .picture__img {
+    width: 700px;
+  }
+  .main .main__bg {
+    height: 688px;
+  }
+}
+
+/*  890  ======================================================*/
+@media (max-width: 890px) {
+  .main__text {
+    font-size: 45px;
+  }
+  .main__text .main__text-set {
+    margin-top: 74px;
+  }
+  .picture__img {
+    width: 500px;
+  }
+  .main__bottom-text .main__bottom-set {
+    font-size: 15px;
+  }
+  .bottom__text-set {
+    font-size: 14px;
+  }
+  .main .main__bg {
+    height: 516px;
+  }
+}
+
+/* 650 */
+@media (max-width: 650px) {
+  .main__text {
+    font-size: 36px;
+  }
+  .main__text .main__text-set {
+    margin-top: 45px;
+  }
+  .picture__img {
+    width: 400px;
+  }
+  .main__buttons .button__left {
+    width: 108px;
+    height: 40px;
+  }
+  .main .main__bg {
+    height: 417px;
+  }
+}
+
+.main__buttons .button__right {
+  width: 150px;
+  margin-left: 0px;
+}
+
+@media (max-width: 500px) {
+  .main__text {
+    font-size: 26px;
+  }
+  .main__bottom-text .main__bottom-set {
+    display: none;
+  }
+  .main__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 17px;
+  }
+  .main__buttons .button__left {
+    margin: 0 auto;
+  }
+  .main__buttons .button__right {
+    margin: 0 auto;
+    height: 40px;
+  }
+  .picture__img {
+    width: 275px;
+  }
+  .main .main__bg {
+    height: 392px;
+  }
+  .bottom__text-set {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Tiro Tamil", serif;
+  src: url(./fonts/TiroTamil-Regular.ttf);
+}
+
+.main__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 49px;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.logo__main:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.logo__mini {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .logo__mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 24px;
+  }
+  .logo__mini:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .logo__main {
+    display: none;
+  }
+  .main__logos-setting {
+    display: none;
+  }
+}
+
+.main__content {
+  margin-top: 169px;
+}
+
+.main__content .content__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.main__content .content__name .content__name-set {
+  font-size: 48px;
+  color: #1e266d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.content__inform {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin: 13% 0% 0% 66%;
+}
+
+.content__inform .inform__box {
+  width: 405px;
+  height: 180px;
+  border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+  margin-top: 35px;
+  margin-left: 138px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.content__photo {
+  width: 598px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inform__box-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__box-name {
+  font-size: 22px;
+  color: #1e266d;
+  margin-left: 47px;
+  font-weight: bolder;
+}
+
+.content__text-about {
+  font-size: 18px;
+  color: #455880;
+  margin-left: 105px;
+  line-height: 27px;
+}
+
+/* 2 секция */
+.box__main {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .content__inform {
+    margin: 13% 0% 0% 5%;
+  }
+}
+
+/* 1200 ============ */
+@media (max-width: 1200px) {
+  .content__photo-set {
+    display: none;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content__photo {
+    width: auto;
+  }
+  .content__inform {
+    margin: 0;
+  }
+  .content__inform .inform__box {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-left: 0%;
+  }
+  .box__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .box__main-photo {
+    width: 260px;
+  }
+  .inform__box-set {
+    margin-top: 5%;
+  }
+  .content__text-about {
+    margin-bottom: 5%;
+    margin-left: 83px;
+  }
+  .content__box-name {
+    margin-left: 21px;
+  }
+}
+
+/* 650 ============ */
+@media (max-width: 650px) {
+  .main__content .content__name .content__name-set {
+    font-size: 36px;
+  }
+  .content__box-name {
+    font-size: 20px;
+    margin-left: 59px;
+  }
+  .content__box-name:last-child {
+    margin-left: 48px;
+  }
+  .content__text-about {
+    font-size: 16px;
+    margin-left: 93px;
+  }
+  .box__main-photo {
+    width: 225px;
+  }
+  .box__set-logo {
+    width: 45px;
+  }
+}
+
+/* 500 */
+@media (max-width: 500px) {
+  .box__main-photo {
+    width: 175px;
+  }
+  .content__inform .inform__box {
+    width: 300px;
+  }
+  .content__box-name {
+    font-size: 18px;
+    margin-left: 74px;
+  }
+  .content__box-name:last-child {
+    margin-left: 25px;
+  }
+  .content__text-about {
+    margin-left: 69px;
+  }
+  .main__content .content__name .content__name-set {
+    font-size: 28px;
+  }
+}
+
+.section__portfolio {
+  background-color: #fff9ea;
+  max-height: 1001px;
+  margin-top: 34px;
+  width: 100%;
+}
+
+.section__text {
+  font-size: 48px;
+  color: #1e266d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 139px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.text__bottom-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.section__text-bottom {
+  font-size: 21px;
+  color: #455880;
+  margin-top: 40px;
+}
+
+.section__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__button-central {
+  width: 148px;
+  height: 50px;
+  background: #3751ff;
+  border-radius: 100px;
+  color: white;
+  border: 0px;
+  margin-top: 40px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-family: "Tiro Tamil", serif;
+}
+
+.section__button-central:hover {
+  background: #455880;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.graphic__set {
+  width: 100%;
+}
+
+/* */
+@media (max-width: 900px) {
+  .section__text-bottom {
+    font-size: 18px;
+  }
+  .section__text {
+    font-size: 40px;
+  }
+  .section__button-central {
+    width: 123px;
+    height: 38px;
+    font-size: 14px;
+  }
+  .section__text-set {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__text-bottom {
+    font-size: 16px;
+  }
+  .section__text {
+    font-size: 28px;
+  }
+  .section__button-central {
+    width: 99px;
+    height: 26px;
+  }
+}
+
+.feedback {
+  height: 838px;
+  width: 100%;
+}
+
+.feedback .container__most {
+  max-width: 1184px;
+  margin: 0 auto;
+  margin-top: 232px;
+}
+
+.feedback__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 56px;
+}
+
+.feedback__main .feedback__main-text {
+  color: #1e266d;
+  font-size: 48px;
+  line-height: 60px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.feedback__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback__box {
+  width: 100%;
+  max-width: 372px;
+  height: 467px;
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+}
+
+.feedback__box .feedback__box-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #455880;
+  font-family: "Tiro Tamil", serif;
+  padding: 38px 35px;
+}
+
+.feedback__box-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 55px;
+}
+
+.feedback__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.feedback__username {
+  font-size: 22px;
+  line-height: 28px;
+  color: #1e266d;
+  font-weight: 600;
+  font-family: "Tiro Tamil", serif;
+  margin-bottom: 10px;
+}
+
+.feedback__link {
+  font-size: 18px;
+  color: #455880;
+  font-family: "Tiro Tamil", serif;
+  text-decoration: none;
+}
+
+.feedback__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1230px) {
+  .feedback__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback__box {
+    margin-bottom: 10px;
+  }
+  .feedback {
+    height: 1760px;
+  }
+}
+
+@media (max-width: 650px) {
+  .feedback__main .feedback__main-text {
+    font-size: 32px;
+  }
+  .feedback .container__feedback {
+    margin-top: 100px;
+  }
+  .feedback__box {
+    max-width: 300px;
+  }
+  .feedback__box .feedback__box-text {
+    font-size: 16px;
+  }
+  .feedback__box-logo {
+    margin-top: 1px;
+  }
+  .feedback__username {
+    font-size: 18px;
+  }
+  .feedback__link {
+    font-size: 16px;
+  }
+}
+
+.launch {
+  max-height: 323px;
+  height: 100%;
+  width: 100%;
+  background-color: #3751ff;
+}
+
+.container__launch {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.launch__content {
+  height: 120px;
+  padding-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.launch__text {
+  max-width: 405px;
+}
+
+.launch__text-set {
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: "Tiro Tamil", serif;
+}
+
+.launch__btn {
+  width: 245px;
+  height: 56px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+
+.launch__btn:hover {
+  background: #e6dfdf;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.launch__btn-set {
+  font-family: "Tiro Tamil", serif;
+  font-size: 18px;
+  color: #455880;
+  line-height: 20px;
+  text-align: center;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  justify-content: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  margin-left: 137px;
+}
+
+.launch__btn-set:hover {
+  background: #3e3f44;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  color: #ffffff;
+}
+
+.launch__btn-icon {
+  margin-right: 16px;
+}
+
+.launch__sidetext {
+  margin-top: 19px;
+}
+
+.launch__sidetext-set {
+  font-size: 16px;
+  font-family: "Tiro Tamil", serif;
+  color: #dfe0eb;
+  margin-left: 105px;
+}
+
+.launch__link {
+  font-size: 16px;
+  font-family: "Tiro Tamil", serif;
+  color: #fed385;
+  text-decoration: none;
+}
+
+.launch__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1230px) {
+  .launch__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__launch {
+    max-width: 387px;
+  }
+  .launch__btn-set {
+    margin: 0;
+  }
+  .launch__text-set {
+    margin-bottom: 25px;
+  }
+  .launch__sidetext-set {
+    display: none;
+  }
+  .launch__content {
+    padding-top: 43px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container__launch {
+    max-width: 274px;
+  }
+  .launch__text-set {
+    font-size: 28px;
+  }
+  .launch__side {
+    max-width: 405px;
+  }
+}
+
+.container__footer {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.footer__main {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 98%;
+  margin-left: 1%;
+}
+
+.footer__mainbox {
+  max-width: 310px;
+}
+
+.footer__mainbox .mainbox__logo-set:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.mainbox__text {
+  margin-top: 31px;
+}
+
+.mainbox__text .mainbox__text-set {
+  color: #455880;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 83px;
+  width: 100%;
+}
+
+.nav__main {
+  color: #1e266d;
+  font-size: 22px;
+  line-height: 28px;
+  text-decoration: none;
+  font-family: "Tiro Tamil", serif;
+}
+
+.nav__main:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.nav__link {
+  font-size: 18px;
+  color: #455880;
+  line-height: 40px;
+  text-decoration: none;
+  font-family: "Tiro Tamil", serif;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.footer__resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icons__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foot__link {
+  height: 40px;
+}
+
+.foot__img {
+  height: 17px;
+}
+
+.foot__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 53px;
+  margin: 53px 1%;
+}
+
+.bottom__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.footer__bottom-text {
+  color: rgba(69, 88, 128, 0.5);
+  font-family: "Tiro Tamil", serif;
+}
+
+.footer__bottom-link {
+  color: #455880;
+  font-size: 14px;
+  line-height: 27px;
+  text-decoration: none;
+  gap: 30px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.footer__bottom-link:hover {
+  text-decoration: underline;
+}
+
+.footer__main {
+  border-bottom: 1px solid rgba(135, 146, 161, 0.08);
+}
+
+@media (max-width: 1230px) {
+  .footer_container {
+    margin: 0 auto;
+    margin-left: 2%;
+    padding-top: 2%;
+  }
+  .footer_main_text a {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__mainbox {
+    display: none;
+  }
+  .footer__main {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__bottom {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav__link {
+    font-size: 16px;
+  }
+  .nav__main {
+    font-size: 20px;
+  }
+  .icons__footer {
+    height: 38px;
+  }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

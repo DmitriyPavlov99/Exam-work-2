@@ -1,0 +1,154 @@
+.main__content {
+  margin-top: 169px;
+  .content__name {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+    .content__name-set {
+      font-size: 48px;
+      color: #1e266d;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
+.content__inform {
+  justify-content: right;
+  margin: 13% 0% 0% 66%;
+  .inform__box {
+    width: 405px;
+    height: 180px;
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+    margin-top: 35px;
+    margin-left: 138px;
+    font-family: $main-text-font;
+  }
+}
+
+.content__photo {
+  width: 598px;
+  display: flex;
+}
+
+.inform__box-set {
+  display: flex;
+}
+
+.content__box-name {
+  font-size: 22px;
+  color: #1e266d;
+  margin-left: 47px;
+  font-weight: bolder;
+}
+.content__text-about {
+  font-size: 18px;
+  color: #455880;
+  margin-left: 105px;
+  line-height: 27px;
+}
+/* 2 секция */
+.box__main {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .content__inform {
+    margin: 13% 0% 0% 5%;
+  }
+}
+/* 1200 ============ */
+@media (max-width: 1200px) {
+  .content__photo-set {
+    display: none;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  .content__photo {
+    width: auto;
+  }
+  .content__inform {
+    margin: 0;
+    .inform__box {
+      height: max-content;
+      margin-left: 0%;
+    }
+  }
+  .box__main {
+    display: flex;
+    justify-content: center;
+  }
+  .box__main-photo {
+    width: 260px;
+  }
+  .inform__box-set {
+    margin-top: 5%;
+  }
+  .content__text-about {
+    margin-bottom: 5%;
+    margin-left: 83px;
+  }
+  .content__box-name {
+    margin-left: 21px;
+  }
+}
+
+/* 650 ============ */
+
+@media (max-width: 650px) {
+  .main__content {
+    .content__name {
+      .content__name-set {
+        font-size: 36px;
+      }
+    }
+  }
+  .content__box-name {
+    font-size: 20px;
+    margin-left: 59px;
+  }
+  .content__box-name:last-child {
+    margin-left: 48px;
+  }
+  .content__text-about {
+    font-size: 16px;
+    margin-left: 93px;
+  }
+  .box__main-photo {
+    width: 225px;
+  }
+  .box__set-logo {
+    width: 45px;
+  }
+}
+/* 500 */
+@media (max-width: 500px) {
+  .box__main-photo {
+    width: 175px;
+  }
+  .content__inform {
+    .inform__box {
+        width: 300px;
+    }
+  }
+  .content__box-name {
+    font-size: 18px;
+    margin-left: 74px;
+  }
+  .content__box-name:last-child {
+    margin-left: 25px;
+  }
+  .content__text-about {
+    margin-left: 69px;
+  }
+  .main__content {
+    .content__name {
+      .content__name-set {
+        font-size: 28px;
+        
+      }
+    }
+  }
+}

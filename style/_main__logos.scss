@@ -1,0 +1,33 @@
+.main__logos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 49px;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.logo__main {
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
+}
+.logo__mini {
+  display: none;
+}
+@media (max-width: 890px) {
+  .logo__mini {
+    display: flex;
+    height: 24px;
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.7s;
+    }
+  }
+  .logo__main {
+    display: none;
+  }
+  .main__logos-setting {
+    display: none;
+  }
+}
