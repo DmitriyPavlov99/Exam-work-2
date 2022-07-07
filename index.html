@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digits</title>
     <link rel="stylesheet" href="./style/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.scss" />
   </head>
   <body>
     <!--Хедер -->
@@ -105,7 +107,7 @@
                 Trusted by forward-thinking software teams around the world
               </p>
             </div>
-            <div class="main__logos">
+            <!-- <div class="main__logos">
               <a class="main__logos-set" href="#">
                 <img
                   class="logo__main"
@@ -185,6 +187,67 @@
                   alt="Disney"
                 />
               </a>
+            </div> -->
+            <div class="your-class">
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img
+                    class="slick_img"
+                    src="./Images/Netflix-one.png"
+                    alt="#"
+                  />
+                </a>
+              </div>
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img
+                    class="slick_img"
+                    src="./Images/DrawKit-two.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img
+                    class="slick_img"
+                    src="./Images/Figma-three.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img
+                    class="slick_img"
+                    src="./Images/Cinemax-four.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img
+                    class="slick_img"
+                    src="./Images/stripe-five.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img class="slick_img" src="./Images/google-six.png" alt="" />
+                </a>
+              </div>
+              <div class="slick_div">
+                <a class="main__logos-set" href="#">
+                  <img
+                    class="slick_img"
+                    src="./Images/disney-seven.png"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div class="main__content">
@@ -380,13 +443,62 @@
                 </p>
               </div>
               <div class="launch__side">
-                <a href="#" class="launch__btn-set"
+                <a href="#" id="modalBtn"
                   ><img
                     class="launch__btn-icon"
                     src="./Images/iconfinder.png"
                     alt="iconfinder"
                   />Get in touch now</a
                 >
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal conte  nt -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form name="name" method="post" action="#">
+                      <label for="login" class="modal_form-name">
+                        Ваше имя:
+                        <input
+                          class="modal_form-name"
+                          type="surname"
+                          size="40"
+                          id="login"
+                          required
+                        />
+                      </label>
+                      <label for="password" class="modal_form-name">
+                        Ваша фамилия:
+                        <input
+                          class="modal_form-name"
+                          type="age"
+                          size="40"
+                          id="password"
+                          required
+                        />
+                      </label>
+                      <label for="age" class="modal_form-name">
+                        Ваш возраст:
+                        <input
+                          class="modal_form-name"
+                          type="number"
+                          size="15"
+                          id="age"
+                          required
+                        />
+                      </label>
+                      <label for="email" class="modal_form-name"
+                        >Ваш електронная почта:
+                        <input
+                          class="modal_form-name"
+                          type="text"
+                          size="30"
+                          id="email"
+                        />
+                      </label>
+                      <input class="modal_submit" type="submit" />
+                    </form>
+                  </div>
+                </div>
                 <div class="launch__sidetext">
                   <p class="launch__sidetext-set">
                     Or, take a peek inside our
@@ -482,6 +594,18 @@
           </div>
         </div>
       </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
+    <script src="./js/backToTopBtn.js"></script>
+    <script src="./js/modalBtn.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
   </body>
 </html>

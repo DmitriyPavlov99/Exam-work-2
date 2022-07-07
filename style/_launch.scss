@@ -2,7 +2,16 @@
   max-height: 323px;
   height: 100%;
   width: 100%;
-  background-color: #3751ff;
+  background: url(../Images/launch_back.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1366px) {
+  .launch {
+      background-attachment: scroll;
+  }
 }
 .container__launch {
   max-width: 1184px;
@@ -34,7 +43,7 @@
     transition: 0.7s;
   }
 }
-.launch__btn-set {
+#modalBtn {
   font-family: $main-text-font;
   font-size: 18px;
   color: #455880;
@@ -85,8 +94,9 @@
   .container__launch {
     max-width: 387px;
   }
-  .launch__btn-set {
+  #modalBtn {
     margin: 0;
+    margin-left: 0px;
   }
   .launch__text-set {
     margin-bottom: 25px;
@@ -106,7 +116,7 @@
   .launch__text-set {
     font-size: 28px;
   }
-  .launch__side {
-    max-width: 405px
+  #modalBtn {
+    max-width: 405px;
   }
 }
